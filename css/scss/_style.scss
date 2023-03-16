@@ -1,0 +1,163 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {       
+    display: none;
+    }
+    @font-face {
+        src:url("../fonts/F37 Ginger Regular.ttf");
+        font-family:"F37 Ginger";
+        font-style:Regular;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    body{
+        background:linear-gradient(107.84deg, #080808f5 0.68%, #0d0d0de1 51.89%);
+        overflow: hidden;
+        font-family:"F37 Ginger";
+    }
+    .logo{
+        z-index:10 ;
+        object-fit: contain;
+        position: relative;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+    }
+    .logo::after,.logo::before{
+        z-index:10 ;
+        font-weight: 700;
+        color: white;
+        position: absolute;
+        display: none;
+        opacity: 0;
+    }
+    .logo::after{
+        content: "yte";
+        top:15%;
+        left: 95%;
+    }
+    .logo::before{
+        content: "unfol";
+        top:-20%;
+        left: -235%;
+    }
+    .wrapper{
+        min-height: fit-content;
+        height: fit-content;
+        max-height: fit-content;
+    }
+    .text-unfold{
+        transition: all 2s ease;
+    }
+    /* media */
+    @media (max-width: 575.98px) {
+        .h-75{
+            height: 65%!important;
+        }
+        .t1{
+            line-height: 30px !important;
+        }
+        .logo {
+            width: 29px;
+            height: 48.33px;
+        }
+        .logo::after,.logo::before{
+            font-size: 29px;
+        }
+        .typed-cursor,.fs-1 {
+            font-size: 1.75rem !important;
+        }
+        .t2 .typed-cursor,.fs-4{
+            font-size: 0.95rem !important;
+        }
+    }
+    @media (max-width: 470px) {
+        .t1{
+            line-height: 30px !important;
+        }
+        .t2{
+            line-height: 25px !important;
+        }
+        .t1 .typed-cursor,.fs-1 {
+            font-size: 1.5rem !important;
+        }
+        .t2 .typed-cursor,.fs-4{
+            font-size: 0.85rem !important;
+        }
+    }
+    @media (max-width:367px) {
+        .logo {
+            width: 20px;
+            height: 33.78px;
+        }
+        .logo::after,.logo::before{
+            font-size: 20px;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .t1{
+            line-height: 40px !important;
+        }
+        .logo {
+            width: 35px;
+            height: 58.33px;
+        }
+        .logo::after,.logo::before{
+            font-size: 35px;
+        }
+        .t1 .typed-cursor,.fs-1 {
+            font-size: 1.75rem !important;
+        }
+        .t2 .typed-cursor,.fs-4{
+            font-size: 1rem !important;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .logo {
+            width: 40px;
+            height: 66.66px;
+        }
+        .logo::after,.logo::before{
+            font-size: 40px;
+        }
+        .t1 .typed-cursor,.fs-1{
+            font-size: 2rem !important;
+        }
+        .t2 .typed-cursor,.fs-4{
+            font-size: 1.1rem !important;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .t1{
+            line-height: 50px !important;
+        }
+        .t1 .typed-cursor,.fs-1 {
+            font-size: calc(1.375rem + 1.5vw)!important;
+        }
+        .t2 .typed-cursor,.fs-4{
+            font-size: calc(1.275rem + .3vw)!important;
+        }
+        .t2{
+            margin-top: 2rem;
+        }
+        .logo {
+            width: 48px;
+            height: 80px;
+        }
+        .logo::after,.logo::before{
+            font-size: 48px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .t1 .typed-cursor,.fs-1{
+            font-size: 3.5rem !important;
+        }
+    }
+    
+    
